@@ -1,26 +1,67 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Filtros from './components/Filtros';
+import Carrinho from './components/Carrinho';
+import styled from 'styled-components'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+const Body = styled.div`
+width: 100vw;
+display:flex;
+justify-content: space-between;
+height:auto;
+
+`
+
+
+class App extends React.Component {
+
+  state = {
+    produtos: [],
+    valorInputMin: "",
+    valorInputMax: "",
+    valorInputBusca: "",
+
+  }
+
+  onChangeMinimo = (event) => {
+    this.setState ({valorInputMin : event.target.value })
+  }
+
+  onChangeMaximo = (event) => {
+
+    this.setState ({valorInputMax: event.target.value })
+  }
+
+  onChangeBusca = (event) => {
+
+    this.setState ({valorInputBusca : event.target.value})
+
+
+  }
+
+
+  render () {
+    console.log (this.state.valorInputMin)
+    console.log (this.state.valorInputMax)
+    console.log (this.state.valorInputBusca)
+    return (  
+    <Body>
+
+
+     <Filtros
+     onChangeMinimo = {this.onChangeMinimo}
+     valueMinimo = {this.state.valorInputMin}
+     onChangeMaximo = {this.onChangeMaximo}
+     valueMaximo = {this.state.valueMaximo}
+     onChangeBusca = {this.onChangeBusca}
+     valueBusca = {this.state.valorInputBusca}
+     />
+     <Carrinho/>
+
+
+    </Body>
   );
+    }
 }
 
 export default App;
