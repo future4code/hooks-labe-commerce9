@@ -7,12 +7,16 @@ import produto2 from "./Img/produto2.jpg"
 import produto3 from "./Img/produto3.jpg"
 import produto4 from "./Img/produto4.jpg"
 import produto5 from "./Img/produto5.jpg"
+import CardProduto from './components/CardProduto';
 
 const Body = styled.div`
 width: 100vw;
 display:flex;
 justify-content: space-between;
 height:auto;
+
+`
+const Main = styled.main`
 
 `
 
@@ -68,6 +72,22 @@ class App extends React.Component {
      onChangeBusca = {this.onChangeBusca}
      valueBusca = {this.state.valorInputBusca}
      />
+
+     <Main> 
+       <div>
+         <p>Quantidade de produtos: {this.state.listaDeProdutos.length()}</p>
+         <div>
+           <p>Ordenação: </p> 
+           <select onChange={this.onChangeSelect}>
+             <option value="crescente"> Crescente </option>
+             <option value="decrescente"> Decrescente</option>
+           </select>
+         </div>
+       </div>
+       <CardProduto
+       imagem={this.state.listaDeProdutos.}
+       />
+     </Main>
      <Carrinho/>
 
 
