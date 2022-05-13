@@ -53,10 +53,7 @@ export const CardCarrinho = styled.ul`
   li{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-
-
-    
+    justify-content: space-evenly;  
   }
 `
 
@@ -80,5 +77,4 @@ export const ContainerProdutos = styled.section`
   align-items: center;
   padding: 10px 0px;
   height: auto;
-
 `
