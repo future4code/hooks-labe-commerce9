@@ -8,7 +8,7 @@ import produto4 from "./Img/produto4.jpg";
 import produto5 from "./Img/produto5.jpg";
 import CardProduto from './components/CardProduto';
 import Header from './components/Header';
-import { Body, Section, ContainerCar, CardCarrinho, Main, ContainerProdutos} from './components/StyleComponents';
+import { Body, Section, Main, ContainerProdutos} from './components/StyleComponents';
 import Carrinho from './components/Carrinho';
 import Footer from './components/Footer';
 
