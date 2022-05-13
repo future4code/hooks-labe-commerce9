@@ -49,7 +49,6 @@ export const CardCarrinho = styled.ul`
   box-sizing: border-box;
   height: 85%;
   
-
   li{
     width: 100%;
     display: flex;
@@ -67,7 +66,6 @@ export const Main = styled.main`
     align-items: center;
     padding: 0px 10px;
   }
-
 `
 export const ContainerProdutos = styled.section`
   display: grid;
