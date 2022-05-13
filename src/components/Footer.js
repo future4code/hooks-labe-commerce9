@@ -34,9 +34,9 @@ class Footer extends React.Component{
                 <h3>Porjeto LabeCommerce</h3>
                 <p>Turma Hooks</p>
                 <p>Desenvolvido por:</p>
-                <p><a href="" target="_blank">Camila,</a>  
+                <p><a href="https://www.linkedin.com/in/camila-barros-santos-356745134" target="_blank">Camila,</a>  
                 <a href="https://www.linkedin.com/in/jonas-levy-892b84230" target="_blank">Jonas,</a>  
-                 <a href="linkedin.com/in/pedrocesarpinto" target="_blank">Pedro</a></p>
+                <a href="https://www.linkedin.com/in/pedrocesarpinto" target="_blank">Pedro</a></p>
             </Container>
         )
     }
