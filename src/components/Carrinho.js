@@ -1,33 +1,20 @@
 import React from 'react';
-import styled from 'styled-components'
+
+import { CardCarrinho, ContainerCar } from './StyleComponents';
 
 
-const ContainerCar = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  border-style: solid;
-  border-width: 1px;
-  width:250px;
-  height:400px;
-  `
+class Carrinho extends React.Component {
 
-  class Carrinho extends React.Component {
+render() {
   
- render() {
-  
- return (
-
-<ContainerCar>
- 
- <h2>Carrinho:</h2>
- <button> Remover </button>
- <button> Remover </button>
- <p> Valor total:  </p>
-
-</ContainerCar>
-
+  return (
+    <ContainerCar>
+      <span>Carrinho de Compras </span>
+      <CardCarrinho >
+      {this.props.renderiza}
+      </CardCarrinho>
+      <span> valor total: R${this.props.totalcarrinho},00 </span>
+    </ContainerCar>
 );
 }
 }

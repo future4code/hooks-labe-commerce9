@@ -10,7 +10,7 @@ const ContainerFilter = styled.div`
   border-width: 1px;
   width:250px;
   height:400px;
-
+  background-color: #cccccc;
   `
 
 
