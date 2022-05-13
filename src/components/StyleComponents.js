@@ -52,7 +52,17 @@ export const CardCarrinho = styled.ul`
   li{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: center;
+    align-items: center;
+    
+    span{
+      width: auto;
+      background: none;
+      border: 1px solid black;
+      margin: 5px 5px;
+      font-size: .9em;
+    }
+
   }
 `
 
