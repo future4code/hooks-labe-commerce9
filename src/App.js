@@ -85,7 +85,7 @@ class App extends React.Component {
          </div>
        </div>
        <CardProduto
-       imagem={this.state.listaDeProdutos.}
+       imagem={this.state.listaDeProdutos}
        />
      </Main>
      <Carrinho/>
