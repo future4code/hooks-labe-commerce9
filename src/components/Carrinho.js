@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import styled from 'styled-components'
 
 
@@ -28,6 +29,23 @@ const ContainerCar = styled.div`
 
 </ContainerCar>
 
+=======
+import { CardCarrinho, ContainerCar } from './StyleComponents';
+
+
+class Carrinho extends React.Component {
+
+render() {
+  
+  return (
+    <ContainerCar>
+      <span>Carrinho de Compras </span>
+      <CardCarrinho >
+      {this.props.renderiza}
+      </CardCarrinho>
+      <span> valor total: R${this.props.totalcarrinho},00 </span>
+    </ContainerCar>
+>>>>>>> jonas-brigandoComGit
 );
 }
 }
